@@ -1,6 +1,6 @@
 [package]
 name = "roracache"
-version = "0.0.0-b0"
+version = "0.0.0-b1"
 edition = "2021"
 authors = ["Solra Bizna <solra@bizna.name>"]
 description = "FUSE filesystem that bolts aggressive caching and readahead onto another filesystem"

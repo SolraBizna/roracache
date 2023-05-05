@@ -76,8 +76,8 @@ pub(crate) struct FS {
 
 impl Filesystem for FS {
     fn init(&mut self, _req: &FuseRequest<'_>, config: &mut fuser::KernelConfig) -> Result<(), libc::c_int> {
-        const FLAGS: u32 = 1 << 13; // FUSE_DO_READDIRPLUS
-        let _ = config.add_capabilities(FLAGS);
+        //const FLAGS: u32 = 1 << 13; // FUSE_DO_READDIRPLUS
+        //let _ = config.add_capabilities(FLAGS);
         Ok(())
     }
     fn lookup(&mut self, _req: &FuseRequest<'_>, parent: u64, name: &OsStr, reply: ReplyEntry) {
